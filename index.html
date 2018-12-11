@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One|New+Rocker|Yatra+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -13,16 +14,15 @@
 </head>
 <body class="background">
 
-    <div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector!</h1>
+    </div>  
 
+    <div class="container">
+        
         <div class="row">
-            <div class="col-lg-6 header">
-                <h1 class="header">Crystal Collector!</h1>
-            </div>
-        </div>    
-    
-        <div class="row">
-            <div class="col-lg-6 rules">
+            <div class="col-12 rules">
+                <h2>Instructions: </h2>
                 <p>A random number will generate at the start of each game.</p>
                 <p>The four crystals you see below each store a random number between 1 - 12. You must click on them to find out the number, which will also increase your total score for the round.</p>
                 <p>You will win the game by clicking on the diamonds and getting your total score to match with the random number selected by the game.</p>
@@ -34,53 +34,29 @@
         <br>
         
         <div class="row">
-            <div class="col-lg-6 randomNumber">
-                Get to this number: 
+            <div class="col-4 randomNumber">
+                <p>Get to this number: </p>
             </div>
-            <div class="col-lg-6 totalWinsLosses">
+            <div class="col-4 counterWinsLosses">
                 <div class="row-wins">Wins: </div>
                 <div class="row-losses">Losses: </div>
             </div>
-        </div>
-        
-        <br>
-        
-        <div class="row">
-            <div class="col-lg-2">
-                <div id="crystal1"></div>
-            </div>
-            <div class="col-lg-2">
-                <div id="crystal2"></div>
-            </div>
-            <div class="col-lg-2">
-                <div id="crystal3"></div>
-            </div>
-            <div class="col-lg-2">
-                <div id="crystal4"></div>
+            <div class="col-4 scoreTotal">
+                <p>Your total score is: </p>
+                <div class="col-4 text-center scoreUser"></div>
             </div>
         </div>
         
         <br>
         
         <div class="row">
-            <div class="col-lg-6 totalScore">
-                Your total score is: 
-            </div>
+            <div class="col-12 text-center crystal-pics"></div>
         </div>
-        
-        <br>
-        
-        <div class="row">
-            <div class="col-lg-6 scoreView"></div>
-        </div>
-
+                           
     </div>
 
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/javascript/game.js"></script>
-
-    
-    
     
 </body>
 </html>

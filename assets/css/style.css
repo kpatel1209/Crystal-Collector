@@ -1,11 +1,54 @@
 body {
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/background.jpg);
     background-size: 100%;
-    color: white;
+    color: #ffffff;
+    font-family: 'Yatra One', cursive;
+}
+
+.jumbotron {
+    background: none;
+    padding: 20px 0 0 0;
+    font-family: 'New Rocker', cursive;
+}
+
+h1 {
+    font-size: 15mm;
 }
 
 .rules {
     border: 1px solid white;
-    padding: 2%;
+    padding: 1%;
+    text-align:  center;
+    width: 250px;
+    line-height: 17px;
+    font-family: 'Yatra One', cursive;
+}
+
+img {
+    margin: 0 40px 0 20px;
+    height: 150px;
+}
+
+.scoreTotal {
+    border: 1px solid white;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.scoreUser {
+    text-align: center;
+    margin-left: 123px;
+}
+
+.counterWinsLosses {
+    border: 1px solid white;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.randomNumber {
+    border: 1px solid white;
+    padding-top: 33px;
+    text-align: center;
 }
 
