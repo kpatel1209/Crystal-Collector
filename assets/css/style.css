@@ -11,8 +11,15 @@ body {
     font-family: 'New Rocker', cursive;
 }
 
+/* I found this feature on youtube so I wanted to try it out. */
 h1 {
-    font-size: 15mm;
+    font-size: 20mm;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,.1);
 }
 
 .rules {
@@ -29,10 +36,12 @@ img {
     height: 150px;
 }
 
-.scoreTotal {
+.scoreTotal,
+.randomNumber {
     border: 1px solid white;
     text-align: center;
     padding-top: 13px;
+    font-size: 8mm;
 }
 
 .scoreUser {
@@ -43,12 +52,19 @@ img {
 .counterWinsLosses {
     border: 1px solid white;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 13px;
+    font-size: 8mm;
 }
 
-.randomNumber {
-    border: 1px solid white;
-    padding-top: 33px;
-    text-align: center;
+/* I found this feature on youtube so I wanted to try it out. */
+@keyframes animate
+{
+    0%
+    {
+        background-position: -500%;
+    }
+    100%
+    {
+        background-position: 500%;
+    }
 }
-

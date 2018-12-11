@@ -21,7 +21,7 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
     }
 
     function resetGame() {
-        $(".randomNumber").html("<p>Get to this number: " + computerChoice);
+        $(".randomNumber").html("<p>Get to this number: " + "<p>" + computerChoice);
         $(".counterWinsLosses").html("<p>Wins: " + wins + "<p>" + "<p>Losses: " + losses + "<p>");
         $(".scoreUser").html(counter);
         $(".crystal-pics").empty();
