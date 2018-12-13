@@ -16,7 +16,7 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
             crystal.addClass("crystal");
             crystal.attr("src", imagesCrystals[i]);
             crystal.attr("value", (Math.floor(Math.random() * 12) + 1));
-            $(".crystal-pics").append(crystal); 
+            $(".crystal-pics").append(crystal);
         }
     }
 
@@ -47,11 +47,11 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
         $(".scoreUser").html(counter);
         if (counter === computerChoice) {
             wins++;
-            alert("YOU WIN!")
+            alert("WOW! You are a Math Wizard!")
             totalReset();
         } else if (counter > computerChoice) {
             losses++;
-            alert("YOU LOSE!")
+            alert("You should use a calculator next time!")
             totalReset();
         };
     };
