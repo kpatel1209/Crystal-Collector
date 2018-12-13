@@ -13,7 +13,7 @@ body {
 
 /* I found this feature on youtube so I wanted to try it out. */
 h1 {
-    font-size: 20mm;
+    font-size: 18mm;
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
     background-size: 80%;
@@ -33,7 +33,7 @@ h1 {
 
 img {
     margin: 0 50px 0 30px;
-    height: 175px;
+    height: 150px;
 }
 
 img:hover {
