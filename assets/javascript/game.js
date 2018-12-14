@@ -1,4 +1,4 @@
-// Global Variables
+//Global Variables
 let wins = 0;
 let losses = 0;
 let counter = 0;
@@ -6,7 +6,7 @@ let computerChoice = "";
 let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.png", "./assets/images/crystal3.png", "./assets/images/crystal4.png"];
 
     // Functions
-    // Computer will randomly select number between 120 - 199
+    // Computer will randomly select a number between 120 - 199.
     function randomComputerChoice () {
         computerChoice = Math.floor(Math.random() * 102) + 19;
     }
@@ -36,12 +36,12 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
         crystalsReset ();
     }
 
-    // Run the codes
+    // Run these codes.
     randomComputerChoice ();
     gameReset ();
     crystalsReset ();
 
-    // Click Function
+    // This is the on click function for when a crystal is clicked.
     $(document).on("click", ".crystal", crystalCollector);
 
     function crystalCollector () {
