@@ -6,10 +6,12 @@ let computerChoice = "";
 let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.png", "./assets/images/crystal3.png", "./assets/images/crystal4.png"];
 
     // Functions
+    // Computer will randomly select number between 120 - 199
     function randomComputerChoice () {
         computerChoice = Math.floor(Math.random() * 102) + 19;
     }
 
+    // Each crystal will randomly select a number between 1 - 12 at the start of each game.
     function resetCrystals () {
         for (let i = 0; i < imagesCrystals.length; i++) {
             let crystal = $("<img>");
@@ -34,7 +36,7 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
         resetCrystals ();
     }
 
-    // Run Code
+    // Run the codes
     randomComputerChoice ();
     resetGame ();
     resetCrystals ();
