@@ -12,7 +12,7 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
     }
 
     // Each crystal will randomly select a number between 1 - 12 at the start of each game.
-    function resetCrystals () {
+    function crystalsReset () {
         for (let i = 0; i < imagesCrystals.length; i++) {
             let crystal = $("<img>");
             crystal.addClass("crystal");
@@ -22,7 +22,7 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
         }
     }
 
-    function resetGame() {
+    function gameReset () {
         $(".randomNumber").html("<p>Get to this number: " + "<p>" + computerChoice);
         $(".counterWinsLosses").html("<p>Wins: " + wins + "<p>" + "<p>Losses: " + losses + "<p>");
         $(".scoreUser").html(counter);
@@ -32,19 +32,19 @@ let imagesCrystals = ["./assets/images/crystal1.png", "./assets/images/crystal2.
     function totalReset () {
         randomComputerChoice ();
         counter = 0;
-        resetGame ();
-        resetCrystals ();
+        gameReset ();
+        crystalsReset ();
     }
 
     // Run the codes
     randomComputerChoice ();
-    resetGame ();
-    resetCrystals ();
+    gameReset ();
+    crystalsReset ();
 
     // Click Function
-    $(document).on("click", ".crystal", crystalClick);
+    $(document).on("click", ".crystal", crystalCollector);
 
-    function crystalClick () {
+    function crystalCollector () {
         counter += parseInt($(this).attr("value"));
         $(".scoreUser").html(counter);
         if (counter === computerChoice) {
