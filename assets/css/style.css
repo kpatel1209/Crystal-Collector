@@ -1,44 +1,44 @@
 body {
-    background-image: url(../images/background.jpg);
-    background-size: 85%;
-    color: #ffffff;
-    font-family: 'Yatra One', cursive;
+  background-image: url(../images/background.jpg);
+  background-size: 85%;
+  color: #ffffff;
+  font-family: 'Yatra One', cursive;
 }
 
 .jumbotron {
-    background: none;
-    padding: 15px 0 0 0;
-    font-family: 'New Rocker', cursive;
+  background: none;
+  padding: 15px 0 0 0;
+  font-family: 'New Rocker', cursive;
 }
 
 /* I found this feature on youtube so I wanted to try it out. */
 h1 {
-    font-size: 18mm;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255,255,255,.1);
+  font-size: 18mm;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, .1);
 }
 
 .rules {
-    border: 1px solid white;
-    padding: 1%;
-    text-align:  center;
-    width: 250px;
-    line-height: 17px;
-    font-family: 'Yatra One', cursive;
+  border: 1px solid white;
+  padding: 1%;
+  text-align: center;
+  width: 250px;
+  line-height: 17px;
+  font-family: 'Yatra One', cursive;
 }
 
 img {
-    margin: 0 50px 0 30px;
-    height: 150px;
+  margin: 0 50px 0 30px;
+  height: 150px;
 }
 
 img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s; 
+  animation: shake 0.5s;
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
@@ -46,47 +46,77 @@ img:hover {
 
 .scoreTotal,
 .randomNumber {
-    border: 1px solid white;
-    text-align: center;
-    padding-top: 13px;
-    font-size: 8mm;
+  border: 1px solid white;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 8mm;
 }
 
 .scoreUser {
-    text-align: center;
-    margin-left: 123px;
+  text-align: center;
+  margin-left: 123px;
 }
 
 .counterWinsLosses {
-    border: 1px solid white;
-    text-align: center;
-    padding-top: 13px;
-    font-size: 8mm;
+  border: 1px solid white;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 8mm;
 }
 
 /* I found this feature on youtube so I wanted to try it out. */
-@keyframes animate
-{
-    0%
-    {
-        background-position: -500%;
-    }
-    100%
-    {
-        background-position: 500%;
-    }
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+
+  100% {
+    background-position: 500%;
+  }
 }
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

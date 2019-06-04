@@ -1,11 +1,13 @@
-Crystal Collector
+# HW #4 - Crystal Collector
+A Fun jQuery Guessing Game
 
-A random number will generate at the start of each game.
+This is a front-end application the uses HTML5, CSS3, JavaScript and jQuery. This particular project highlights using jQuery to dynamically update the HTML of the application.
 
-The four crystals you see below each store a random number between 1 - 12. You must click on them to find out the number, which will also increase your total score for the round.
+### Other Features
+The page was built using Bootstrap for responsiveness.
+This application contains alerts and the logic has timeouts to allow the final scores to render before the alert executes.
 
-You will win the game by clicking on the diamonds and getting your total score to match with the random number selected by the game.
+### How to Play
+You will be given a random number at the start of the game. Use the crystals to match your points to the random number. The value of the crystals changes for every game and you must figure out their values on your own.
 
-You will loose the game if your score goes above the random number picked by the game.
-
-When the game restarts, the value of the crystals will change as well.
+Match your points to the random number to win. If you go over, you lose!
